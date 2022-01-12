@@ -1,0 +1,200 @@
+<html>
+ <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="./css/Index.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     
+     <link rel="icon" href="./img/logo.png" type="img/png">
+     <title>Melomane</title>
+
+ </head>
+ <body>
+     <header>
+       
+         <div class="navbar">
+            <a href="#" class="logo">
+              <img src="./img/textlogo.png">
+            </a>
+            <ul class="nav">
+               <li><a href="./BS_Support.html">Support</a></li>
+               <li><a href="./BS_Download.html">Download</a></li>
+               <li><a>|</a></li>
+               <li><a href="./Signup.php">Sign up</a></li>
+               <li><a href="./Login.php">Log in</a></li>    
+            </ul>
+         </div>  
+         
+        
+      
+     </header>
+
+      <main>
+<nav>
+     <div class="img-slider">
+      <div class="slide active">
+        <img src="./img/Index/beethovan_00000.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="./img/Index/mozart_00000.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="./img/Index/plato_00000.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="./img/Index/bobmarley_00000.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="./img/Index/louise_00000.jpg" alt="">
+        
+      </div>
+      <div class="navigatio">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+
+
+</main>
+<!--=================================FOOTER============================-->
+
+<footer class="footer">
+  <div class="footer-left">
+    <a href="#"><img src="./img/textlogo1.png" alt=""></a>
+    
+     <p></p>
+    <div class="social-menu">
+      <ul>
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      
+      </ul>
+    </div>
+    
+  </div>
+  <div class="description">
+    <p>Hello folks! Melomane is a widely spread music coomunity with over 10M+ subscribers.</p>
+    <p>Join us in our journey and be a part of an exciting community!</p>
+    
+  </div>
+
+
+  <div class="company">
+    <h2>Company</h2>
+</div>
+
+<div class="Communities">
+    <h2>Communities</h2>
+</div>
+
+<div class="links">
+    <h2>Useful links</h2>      
+</div>
+<div class="comp">
+  <div class="box">
+    <div class="about"><a href="#"><h5>About</h5></a></div>
+    <div class="blog"><a href="#"><h5>Blog</h5></a></div>
+    <div class="blog"><a href="#"><h5>Jobs</h5></a></div>
+    </div>
+</div>
+
+<div class="comm">
+  <div class="box">
+    <div class="artist"><a href="#"><h5>For Artist</h5></a></div>
+   <div class="advertise"><a href="#"><h5>Advertising</h5></a></div>
+   <div class="advertise"><a href="#"><h5>Developers</h5></a></div>
+   <div class="advertise"><a href="#"><h5>Investors</h5></a></div>
+   <div class="advertise"><a href="#"><h5>Vendors</h5></a></div>
+  </div>
+</div>
+
+<div class="ulink">
+  <div class="box">
+    <div class="support"><a href="#"><h5>Support</h5></a></div>
+    <div class="support"><a href="#"><h5>Web Player</h5></a></div>
+    <div class="mobapp"><a href="#"><h5>Free Mobile App</h5></a></div>
+    </div>
+</div>
+
+  
+  
+<div class="copyright">
+  <p>&copy;  Designed with &heartsuit; by Sameer Kshirsagar.</p>
+</div>
+
+    
+
+  
+</footer>
+
+
+
+
+
+
+<script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 5000);
+    }
+    repeater();
+  }
+  repeat();
+  </script>
+
+ </body>   
+</html>

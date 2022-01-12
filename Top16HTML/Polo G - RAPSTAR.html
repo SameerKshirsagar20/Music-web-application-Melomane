@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polo G - RAPSTAR</title>
+        <!--font awesome cdnjs-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+        <!--style-->
+        <link rel="stylesheet" href="../css/SinglePlayer.css">
+    </head>
+    
+    <body>
+        <div class="main_div">
+            <div class="music_container">
+                <h2 id="artist">Polo G</h2>
+                <h3 id="title">RAPSTAR</h3>
+                <div class="img_container">
+                    <img src="../img/Mainpage/Top 16/polo g  - rapstar.jpg" alt="">
+                </div>
+                <audio src="../Songs/Top 16/Polo G - RAPSTAR.mp3" id="jon"></audio>
+                <!----progress bar-->
+                <div class="progressbar_container" id="progress_container">
+                    <div class="progress_duration_meter">
+                        <div class="current_time">0:00</div>
+                        <div id="duration">0:00</div>
+                    </div>
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+    
+                <!-----controls------->
+                <div class="music_controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main_button" id="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                    
+             
+    
+                </div>
+                <!-----liked------>
+                <a href="#" class="like">
+                    <i class="fa fa-heart" aria-hidden="true" id="like"></i>
+                </a>
+            </div>
+            
+            
+    
+        <script src="../js/SinglePlayer.js"></script>
+        <script>
+            const songs = [
+        {
+            name:"Polo G - RAPSTAR",
+            title: "RAPSTAR",
+            artist:"Polo G"    
+                   
+        }
+    ]
+        </script>
+    </body>
+    </html>v

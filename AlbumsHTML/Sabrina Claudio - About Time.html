@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Claudio - WHEN WE ALL FALL ASLEEP, WHERE DO WE GO</title>
+    <!--font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <!--style-->
+    <link rel="stylesheet" href="../css/MultiPlayer.css">
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">About Time (Intro)</h3>
+            <div class="img_container">
+                <img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt="">
+            </div>
+            <audio src="../Songs/Albums/Sabrina Claudio - About Time/About Time (Intro).mp3" id="jon"></audio>
+            <!----progress bar-->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div class="current_time">0:00</div>
+                    <div id="duration">0:00</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-----controls------->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+                
+         
+
+            </div>
+            <!-----liked------>
+            <a href="#" class="like">
+                <i class="fa fa-heart" aria-hidden="true" id="like"></i>
+            </a>
+        </div>
+        <div class="album-info">
+            <!--<ul class="album-covers">-->
+                <div class="album-covers">
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                <li><img src="../img/Album/Sabrina Claudio - About Time/About Time (Intro).jpg" alt=""></li>
+                
+           <!--</ul>--></div>
+           <div>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">About Time (Intro)</h3> 
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Belong to You</h3>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Everlasting Love</h3>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Natural</h3> 
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Stand Still</h3>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Frozen</h3>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Unravel Me</h3>
+            <h2 id="artist">Sabrina Claudio</h2>
+            <h3 id="title">Wanna Know</h3>
+        </div>
+    </div>
+
+    <script src="../js/MultiPlayer.js"></script>
+    <script>
+
+        const songs = [
+    {
+        name:"About Time (Intro)",
+        title: "About Time (Intro)",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Belong to You",
+        title: "Belong to You",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Everlasting Love",
+        title: "Everlasting Love",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Natural",
+        title: "Natural",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Stand Still",
+        title: "Stand Still",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Frozen",
+        title: "Frozen",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Unravel Me",
+        title: "Unravel Me",
+        artist:"Sabrina Claudio"    
+               
+    },
+    {
+        name:"Wanna Know",
+        title: "Wanna Know",
+        artist:"Sabrina Claudio"    
+               
+    }
+]
+
+
+const loadSongs = (songs) => {
+    title.textContent = songs.title;
+    artist.textContent = songs.artist;
+    music.src ="../Songs/Albums/Sabrina Claudio - About Time/" + songs.name + ".mp3";
+    //music.src ='music${song.name}.mp3';
+    img.src = "../img/Album/Sabrina Claudio - About Time/" + songs.name + ".jpg";
+};
+
+    </script>
+</body>
+</html>

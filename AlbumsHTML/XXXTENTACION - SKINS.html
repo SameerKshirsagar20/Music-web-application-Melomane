@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXTENTACION - SKINS</title>
+    <!--font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <!--style-->
+    <link rel="stylesheet" href="../css/MultiPlayer.css">
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">Introduction</h3>
+            <div class="img_container">
+                <img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt="">
+            </div>
+            <audio src="../Songs/Albums/XXXTENTACION - SKINS/Introduction.mp3" id="jon"></audio>
+            <!----progress bar-->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div class="current_time">0:00</div>
+                    <div id="duration">0:00</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-----controls------->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+                
+         
+
+            </div>
+            <!-----liked------>
+            <a href="#" class="like">
+                <i class="fa fa-heart" aria-hidden="true" id="like"></i>
+            </a>
+        </div>
+        <div class="album-info">
+            <!--<ul class="album-covers">-->
+                <div class="album-covers">
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                <li><img src="../img/Album/XXXTENTACION - SKINS/BAD.jpg" alt=""></li>
+                
+           <!--</ul>--></div>
+           <div>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">Introduction</h3> 
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">BAD</h3>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">Difference-Interlude</h3>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">Guardian-angel</h3> 
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">I-don’t-let-go</h3>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">One-Minute</h3>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">Train-food</h3>
+            <h2 id="artist">XXXTENTACION</h2>
+            <h3 id="title">what-are-you-so-afraid-of</h3>
+        </div>
+    </div>
+
+    <script src="../js/MultiPlayer.js"></script>
+    <script>
+
+        const songs = [
+    {
+        name:"Introduction",
+        title: "Introduction",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"BAD",
+        title: "BAD",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"difference-interlude",
+        title: "Difference-Interlude",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"Guardian-angel",
+        title: "Guardian-angel",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"I-dont-let-go",
+        title: "I-don’t-let-go",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"One-Minute-ft.-Kanye-West",
+        title: "One-Minute",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"Train-food",
+        title: "Train-food",
+        artist:"XXXTENTACION"    
+               
+    },
+    {
+        name:"what-are-you-so-afraid-of",
+        title: "what-are-you-so-afraid-of",
+        artist:"XXXTENTACION"    
+               
+    }
+]
+
+
+const loadSongs = (songs) => {
+    title.textContent = songs.title;
+    artist.textContent = songs.artist;
+    music.src ="../Songs/Albums/XXXTENTACION - SKINS/" + songs.name + ".mp3";
+    //music.src ='music${song.name}.mp3';
+    img.src = "../img/Album/XXXTENTACION - SKINS/" + songs.name + ".jpg";
+};
+
+    </script>
+</body>
+</html>
